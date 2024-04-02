@@ -8,8 +8,8 @@ public class Presentation {
     public static void main(String[] args){
         /* injection par instanciation statique "new" des dependances */
         DaoImpl2 dao=new DaoImpl2();
-        IMetierImpl metier=new IMetierImpl();
-        metier.setDao(dao);
+        IMetierImpl metier=new IMetierImpl(dao);
+        //metier.setDao(dao);
         System.out.println("Resultat:"+ metier.calcul());
     }
 }
