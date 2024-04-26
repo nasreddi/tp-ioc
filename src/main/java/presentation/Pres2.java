@@ -10,7 +10,9 @@ import java.util.Scanner;
 
 
 
-public class Pres2 {
+public class
+
+Pres2 {
     public static void main(String[] args) throws Exception {
         Scanner scanner=new Scanner(new File("config.txt"));
         String daoClassName=scanner.nextLine();
